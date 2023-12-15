@@ -8,6 +8,7 @@ __email__ = "gbuchanan@westmont.edu" "dchoi@westmont.edu"
 from collections import defaultdict, Counter
 from math import log10
 from typing import Iterable, Any
+
 from classifier.classifier_models import Feature, FeatureSet, AbstractClassifier
 from nltk import word_tokenize
 
@@ -33,12 +34,6 @@ class OurFeatureSet(FeatureSet):
         sender = recipient = subject = None
 
         for i, word in enumerate(words):
-            # if words[i:i + 2] == ['From', ':']:
-            #     sender = words[i + 2:]
-            # elif words[i:i + 2] == ['To', ':']:
-            #     recipient = words[i + 2:]
-            # elif words[i:i + 2] == ['Subject', ':']:
-            #     subject = words[i + 2:]
 
             token = word.lower()  # Convert word to lowercase for consistency
             word_len = len(token)
