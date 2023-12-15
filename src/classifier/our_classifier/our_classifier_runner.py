@@ -4,7 +4,6 @@ import os
 import pickle
 import quopri
 import random
-
 from bs4 import BeautifulSoup
 
 from classifier.our_classifier.our_classifier_models import OurFeatureSet, OurClassifier
@@ -26,8 +25,8 @@ def main() -> None:
             classifier, train_set, test_set = pickle.load(f)
     else:
 
-        mbox_file_gbuch = '../../../../Inbox.mbox'
-        mbox_file_dchoi = '../../../../mail.mbox'
+        mbox_file_gbuch = '/Users/Inbox.mbox'
+        mbox_file_dchoi = '/Users/mail.mbox'
 
         # Load the MBOX file
         mbox_g = mailbox.mbox(mbox_file_gbuch)
