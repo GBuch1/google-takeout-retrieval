@@ -30,3 +30,6 @@
   
 ### Mike Ryu(@mryu@westmont.edu) abstract models file classifier.models file was written by him 
 
+## Extra Credit
+#### I did the google cloud computing extra credit. It was a long a harrowing journey but it was worth it in the end. I had to work with installing all the necessary packages to run my code. I was able to get it to output exactly like it did in my PyCharm window, which was super cool.
+
